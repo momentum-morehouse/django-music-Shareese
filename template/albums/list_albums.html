@@ -4,6 +4,7 @@
 <h1>All Albums</h1>
 
 
+<a href="{% url 'add_albums' %}">Add Album</a>
 <div class="flex flex-wrap">
   {% for album in albums %}
   <div class="w-33 pa3">
@@ -25,8 +26,8 @@
     </div>
     {% endif %}
 
-    
   </div>
+  <a href="{% url 'delete_albums' pk=album.pk %}">Delete Album</a>
   {% endfor %}
 </div>  
 {% endblock %}
