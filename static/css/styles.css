@@ -147,3 +147,17 @@ color: #fff !important;
   cursor: pointer;
   line-height: 15px;
 }
+.music-name p
+{
+  font-size: 10px;
+  line-height: 1px;
+  letter-spacing: 0.5px;
+  color: #elelel;
+  cursor: pointer;
+}
+hr
+{
+  width: 95%;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important
+}
