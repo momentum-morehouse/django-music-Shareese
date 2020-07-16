@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-music-shareese-2.shareese.repl.co', 'django-music-shareese-2--shareese.repl.co']
 
 # Application definition
 
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
     # Project-specific
     'users',
+    'albums',
 ]
 
 MIDDLEWARE = [

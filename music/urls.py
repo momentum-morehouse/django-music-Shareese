@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.conf import settings
 from django.urls import include, path
 
+from albums import views as album_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', album_views.index, name='homepage')
 ]
 
 if settings.DEBUG:
