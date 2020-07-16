@@ -72,21 +72,26 @@ color: #fff !important;
   border: 1px solid #fff;
   
 }
-ul
+.menu ul
 {
   font-size: 10px;
   padding: initial;
 }
-ul li
+.menu ul li
 {
   list-style-type: none;
   display: inline-block;
   border-right: 1px sold #fff;
 }
-ul li a
+.menu ul li a
 {
   color: #fff;
   padding: 5px 15px;
   text-decoration: none;
   letter-spacing: 0.5px;
+}
+.menu ul li:last-child
+{
+  border-right: none;
+
 }
