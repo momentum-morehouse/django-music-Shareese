@@ -5,15 +5,15 @@
 
 
 <h2>Albums</h2>
-<div class="flex flex-wrap">
+<div class="music-container">
   {% for album in albums %}
-  <div class="w-33 pa3 albums">
+  <div class="music-header">
     <h2>{{ album.title }}</h2>
 
 
 
     {% if album.artist %}
-    <div class="flex">
+    <div class="title">
       <div class="pr2"></div>
       <h3>{{ album.artist }}</h3>
     </div>
