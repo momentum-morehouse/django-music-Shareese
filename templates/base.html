@@ -63,7 +63,7 @@
 			margin-top: 15px;
 			font-weight: 700;
 		}
-
+    
 }
 /*Music Player Customization Style*/
     span{
@@ -285,7 +285,15 @@
 
       $(".album-poster").on('click' , function(e){
         var dataSwitchId = $(this).attr('data-switch');
-        console.log(dataSwitchId);
+        //console.log(dataSwitchId);
+
+      ap.list.switch(dataSwitchId); //this is static id
+
+      ap.play();
+
+
+      $("#aplayer").addClass('showPlayer');
+
       });
 
       const ap = new APlayer({
